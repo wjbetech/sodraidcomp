@@ -1,9 +1,7 @@
-import Party from "./Party"
-import { buffs } from "../utils/buffs"
-
+import Party from "./Party";
+import { buffs } from "../utils/buffs";
 
 export default function RaidGrid() {
-
   console.log(buffs);
 
   return (
@@ -18,5 +16,5 @@ export default function RaidGrid() {
         <span>Moonkin Aura</span>
       </div>
     </div>
-  )
+  );
 }

@@ -14,5 +14,5 @@ export default function Party(props: PartyProps) {
       <PlayerSlot />
       <PlayerSlot />
     </div>
-  )
+  );
 }

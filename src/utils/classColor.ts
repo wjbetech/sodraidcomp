@@ -1,5 +1,18 @@
-function colorByClass(className: string): string {
-  let color = "";
+type ClassName = "druid" | "mage" | "hunter" | "paladin" | "priest" | "rogue" | "shaman" | "warlock" | "warrior";
+
+type ClassColor =
+  | "#FF7C0A"
+  | "#3FC7EB"
+  | "#AAD372"
+  | "#F48CBA"
+  | "#FFFFFF"
+  | "#FFF468"
+  | "#0070DD"
+  | "#8788EE"
+  | "#C69B6D";
+
+function colorByClass(className: ClassName): ClassColor {
+  let color: ClassColor;
   switch (className) {
     case "druid":
       color = "#FF7C0A";
@@ -10,7 +23,7 @@ function colorByClass(className: string): string {
     case "hunter":
       color = "#AAD372";
       break;
-    case "paladin": 
+    case "paladin":
       color = "#F48CBA";
       break;
     case "priest":
