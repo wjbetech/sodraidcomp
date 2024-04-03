@@ -1,5 +1,5 @@
 import './App.css'
-import ClassIcons from "./components/ClassIcons"
+import ClassesAndSpecs from "./components/ClassesAndSpecs"
 import RaidGrid from "./components/RaidGrid"
 
 function App() {
@@ -9,10 +9,12 @@ function App() {
       <main>
         <h1>SoD Raid Composition</h1>
         <span>by Valruna @ Living Flame EU</span>
-        <ClassIcons />
-        <RaidGrid />
+        <ClassesAndSpecs />
+        <div className="w-[75%] m-auto">
+          <RaidGrid />
+        </div>
       </main>
   )
 }
 
-export default App
+export default App;
