@@ -8,9 +8,9 @@ function App() {
   return (
       <main>
         <h1>SoD Raid Composition</h1>
-        <span>by Valruna @ Living Flame EU</span>
+        <span className="text-xs text-gray-400">by Valruna @ Living Flame EU</span>
         <ClassesAndSpecs />
-        <div className="w-[75%] m-auto">
+        <div className="m-auto w-full">
           <RaidGrid />
         </div>
       </main>
