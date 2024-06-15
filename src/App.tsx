@@ -1,13 +1,13 @@
 import "./App.css";
-import ClassesAndSpecs from "./components/ClassesAndSpecs";
+import WoWSpecs from "./components/ClassesAndSpecs";
 import RaidGrid from "./components/RaidGrid";
 
 function App() {
   return (
-    <main>
-      <h1>SoD Raid Composition</h1>
+    <main className="">
+      <h1 className="mt-4">SoD Raid Composition</h1>
       <span className="text-xs text-gray-400">by Valruna @ Living Flame EU</span>
-      <ClassesAndSpecs />
+      <WoWSpecs />
       <div className="m-auto w-full">
         <RaidGrid />
       </div>

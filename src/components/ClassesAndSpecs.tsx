@@ -1,35 +1,45 @@
-import { classesAndSpecs } from "../utils/specs";
+import specsData from "../specs.json";
 import colorByClass from "../utils/classColor";
 
-const Specs = ({ className, properties }) => {
-  const classColor = colorByClass(className);
+interface SpecData {
+  spec: string;
+  "icon-link": string;
+}
+
+interface ClassSpecs {
+  [specName: string]: SpecData;
+}
+
+const WoWSpecs: React.FC = () => {
+  const data: WoWClass[] = specsData;
 
   return (
-    <div className={`p-2 border-2 border-gray-600 mx-1 rounded-md bg-${className} bg-opacity-50`}>
-      <ul className="flex flex-col justify-evenly">
-        {properties.map((property) => (
-          <li
-            key={property}
-            className="p-1 mb-1 border-2 border-gray-600 bg-gray-900 rounded-md w-[150px] cursor-pointer"
-            style={{ color: `${classColor}` }}
+    <div className="grid grid-cols-4 align-middle justify-center my-10 gap-4 ">
+      {data.map((wowClass, index) => {
+        const className = Object.keys(wowClass)[0];
+        const classSpecs = wowClass[className];
+
+        const classColor = colorByClass(wowClass);
+        console.log(classColor);
+
+        return (
+          <div
+            className="flex justify-center border-[1px] p-2 rounded-lg"
+            key={index}
+            style={{ backgroundColor: `${classColor}` }}
           >
-            {property}
-          </li>
-        ))}
-      </ul>
+            <div className="flex flex-row gap-4">
+              {Object.entries(classSpecs).map(([specName, spec], idx) => (
+                <div key={idx} className="h-[30px] w-[30px]">
+                  <img src={spec["icon-link"]} alt={spec.spec} />
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
 
-// Main component
-const ClassesAndSpecs = () => {
-  return (
-    <div className="flex justify-center my-4">
-      {Object.entries(classesAndSpecs).map(([className, properties]) => (
-        <Specs key={className} className={className} properties={properties} />
-      ))}
-    </div>
-  );
-};
-
-export default ClassesAndSpecs;
+export default WoWSpecs;
