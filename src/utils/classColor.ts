@@ -1,45 +1,45 @@
-type ClassName = "druid" | "mage" | "hunter" | "paladin" | "priest" | "rogue" | "shaman" | "warlock" | "warrior";
+type ClassName = "Druid" | "Mage" | "Hunter" | "Paladin" | "Priest" | "Rogue" | "Shaman" | "Warlock" | "Warrior";
 
 type ClassColor =
-  | "#FF7C0A"
-  | "#3FC7EB"
-  | "#AAD372"
-  | "#F48CBA"
-  | "#FFFFFF"
-  | "#FFF468"
-  | "#0070DD"
-  | "#8788EE"
-  | "#C69B6D";
+  | "rgba(255, 124, 10, 0.5)"
+  | "rgba(63, 199, 235, 0.5)"
+  | "rgba(170, 211, 114, 0.5)"
+  | "rgba(244, 140, 186, 0.5)"
+  | "rgba(255, 255, 255, 0.5)"
+  | "rgba(255, 244, 104, 0.5)"
+  | "rgba(0, 112, 221, 0.5)"
+  | "rgba(135, 136, 238, 0.5)"
+  | "rgba(198, 155, 109, 0.5)";
 
 function colorByClass(className: ClassName): ClassColor {
   let color: ClassColor;
   switch (className) {
-    case "druid":
-      color = "#FF7C0A";
+    case "Druid":
+      color = "rgba(255, 124, 10, 0.5)";
       break;
-    case "mage":
-      color = "#3FC7EB";
+    case "Mage":
+      color = "rgba(63, 199, 235, 0.5)";
       break;
-    case "hunter":
-      color = "#AAD372";
+    case "Hunter":
+      color = "rgba(170, 211, 114, 0.5)";
       break;
-    case "paladin":
-      color = "#F48CBA";
+    case "Paladin":
+      color = "rgba(244, 140, 186, 0.5)";
       break;
-    case "priest":
-      color = "#FFFFFF";
+    case "Priest":
+      color = "rgba(255, 255, 255, 0.5)";
       break;
-    case "rogue":
-      color = "#FFF468";
+    case "Rogue":
+      color = "rgba(255, 244, 104, 0.5)";
       break;
-    case "shaman":
-      color = "#0070DD";
+    case "Shaman":
+      color = "rgba(0, 112, 221, 0.5)";
       break;
-    case "warlock":
-      color = "#8788EE";
+    case "Warlock":
+      color = "rgba(135, 136, 238, 0.5)";
       break;
-    case "warrior":
-      color = "#C69B6D";
+    case "Warrior":
+      color = "rgba(198, 155, 109, 0.5)";
       break;
   }
   return color;

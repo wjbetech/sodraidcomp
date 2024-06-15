@@ -8,6 +8,7 @@ interface SpecData {
 
 interface ClassSpecs {
   [specName: string]: SpecData;
+  spec: SpecData;
 }
 
 const WoWSpecs: React.FC = () => {
@@ -15,23 +16,26 @@ const WoWSpecs: React.FC = () => {
 
   return (
     <div className="grid grid-cols-4 align-middle justify-center my-10 gap-4 ">
-      {data.map((wowClass, index) => {
+      {data.map((wowClass) => {
         const className = Object.keys(wowClass)[0];
         const classSpecs = wowClass[className];
 
-        const classColor = colorByClass(wowClass);
-        console.log(classColor);
+        const classColor = colorByClass(className as ClassName);
 
         return (
           <div
             className="flex justify-center border-[1px] p-2 rounded-lg"
-            key={index}
+            key={wowClass}
             style={{ backgroundColor: `${classColor}` }}
           >
-            <div className="flex flex-row gap-4">
-              {Object.entries(classSpecs).map(([specName, spec], idx) => (
-                <div key={idx} className="h-[30px] w-[30px]">
-                  <img src={spec["icon-link"]} alt={spec.spec} />
+            <div className="flex flex-row gap-4 justify-center items-center align-middle">
+              {Object.entries(classSpecs).map(([specName, spec]) => (
+                <div key={specName} className="flex h-[32px] w-[32px]">
+                  <img
+                    src={spec["icon-link"]}
+                    alt={spec.spec}
+                    className="rounded-md border-2 border-black cursor-grab"
+                  />
                 </div>
               ))}
             </div>
