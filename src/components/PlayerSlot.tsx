@@ -1,6 +1,6 @@
 export default function PlayerSlot() {
 	return (
-		<div className="flex flex-col my-2 border-2 border-gray-500 rounded-md p-2 hover:bg-white/10">
+		<div className="flex items-center justify-center my-2 border-2 border-gray-500 rounded-md h-[34px] w-[180px] p-2 hover:bg-white/10">
 			{" "}
 			-{" "}
 		</div>

@@ -30,7 +30,7 @@ const WoWSpecs: React.FC = () => {
 					>
 						<div className="flex flex-row gap-4 justify-center items-center align-middle">
 							{Object.entries(classSpecs).map(([specName, spec]) => (
-								<div key={specName} className="flex h-[32px] w-[32px]">
+								<div key={specName} className="flex h-[30px] w-[30px]">
 									<img
 										src={spec["icon-link"]}
 										alt={spec.spec}

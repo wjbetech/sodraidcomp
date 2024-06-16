@@ -5,8 +5,8 @@ export default function RaidGrid() {
 	console.log(buffs);
 
 	return (
-		<div className="justify-evenly w-full grid gap-2">
-			<div className="grid grid-cols-2 gap-4">
+		<div className="w-full">
+			<div className="grid grid-cols-4">
 				<Party componentId={1} />
 				<Party componentId={2} />
 				<Party componentId={3} />
