@@ -1,36 +1,40 @@
 [
   {
-    "Druid": [
+    "className": "Druid",
+    "specs": [
       {
-        "Balance": {
-          "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_starfall.jpg",
-          "buffs": ["Mark of the Wild", "Moonkin Aura"],
-          "debuffs": ["Faerie Fire"],
-          "abilities": ["Rebirth", "Innervate", "Tranquility"]
-        },
-        "Feral (Cat)": {
-          "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_catform.jpg",
-          "buffs": ["Mark of the Wild", "Leader of the Pack"],
-          "debuffs": ["Faerie Fire"],
-          "abilities": ["Rebirth", "Innervate", "Tranquility"]
-        },
-        "Feral (Bear)": {
-          "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_racial_bearform.jpg",
-          "buffs": ["Mark of the Wild", "Leader of the Pack"],
-          "debuffs": ["Faerie Fire"],
-          "abilities": ["Rebirth", "Innervate", "Tranquility"]
-        },
-        "Restoration": {
-          "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_healingtouch.jpg",
-          "buffs": ["Mark of the Wild"],
-          "debuffs": ["Faerie Fire"],
-          "abilities": ["Rebirth", "Innervate", "Tranquility"]
-        }
+        "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_starfall.jpg",
+        "buffs": ["Mark of the Wild", "Moonkin Aura"],
+        "debuffs": ["Faerie Fire"],
+        "abilities": ["Rebirth", "Innervate", "Tranquility"],
+        "specName": "Balance"
+      },
+      {
+        "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_catform.jpg",
+        "buffs": ["Mark of the Wild", "Leader of the Pack"],
+        "debuffs": ["Faerie Fire"],
+        "abilities": ["Rebirth", "Innervate", "Tranquility"],
+        "specName": "Feral (Cat)"
+      },
+      {
+        "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_racial_bearform.jpg",
+        "buffs": ["Mark of the Wild", "Leader of the Pack"],
+        "debuffs": ["Faerie Fire"],
+        "abilities": ["Rebirth", "Innervate", "Tranquility"],
+        "specName": "Feral (Bear)"
+      },
+      {
+        "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_healingtouch.jpg",
+        "buffs": ["Mark of the Wild"],
+        "debuffs": ["Faerie Fire"],
+        "abilities": ["Rebirth", "Innervate", "Tranquility"],
+        "specName": "Restoration"
       }
     ]
   },
   {
-    "Hunter": [
+    "className": "Hunter",
+    "specs": [
       {
         "Beast Mastery": {
           "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_beasttaming.jpg",
@@ -54,7 +58,8 @@
     ]
   },
   {
-    "Mage": [
+    "className": "Mage",
+    "specs": [
       {
         "Arcane": {
           "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_magicalsentry.jpg",
@@ -78,7 +83,8 @@
     ]
   },
   {
-    "Paladin": [
+    "className": "Paladin",
+    "specs": [
       {
         "Holy": {
           "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holybolt.jpg",
@@ -102,7 +108,8 @@
     ]
   },
   {
-    "Priest": [
+    "className": "Priest",
+    "specs": [
       {
         "Discipline": {
           "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_wordfortitude.jpg",
@@ -126,7 +133,8 @@
     ]
   },
   {
-    "Rogue": [
+    "className": "Rogue",
+    "specs": [
       {
         "Assassination": {
           "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
@@ -150,7 +158,8 @@
     ]
   },
   {
-    "Shaman": [
+    "className": "Shaman",
+    "specs": [
       {
         "Elemental": {
           "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightning.jpg",
@@ -174,7 +183,8 @@
     ]
   },
   {
-    "Warlock": [
+    "className": "Warlock",
+    "specs": [
       {
         "Affliction": {
           "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_deathcoil.jpg",
@@ -213,7 +223,8 @@
     ]
   },
   {
-    "Warrior": [
+    "className": "Warrior",
+    "specs": [
       {
         "Arms": {
           "icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
