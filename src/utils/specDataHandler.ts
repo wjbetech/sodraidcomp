@@ -1,10 +1,6 @@
-import classesAndSpecs from '../specs.json';
+import classesAndSpecs from "../specs.json";
 
 // grab class names
-const classAndSpecData = classesAndSpecs;
-
-classAndSpecData.forEach((className, idx) => {
-  return className[idx];
-});
+const classAndSpecData = classesAndSpecs.map((classObj) => classObj.className);
 
 export default { classAndSpecData };
