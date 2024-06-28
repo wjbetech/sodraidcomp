@@ -1,5 +1,6 @@
 import specsData from "../specs.json";
 import colorByClass from "../utils/classColor";
+import { SpecIcon } from "./Spec";
 
 interface SpecData {
 	spec: string;
@@ -11,7 +12,7 @@ interface ClassSpecs {
 	spec: SpecData;
 }
 
-const WoWSpecs: React.FC = () => {
+const WoWSpecs: React.FC = ({ spec }) => {
 	const data = specsData;
 
 	return (
@@ -29,11 +30,10 @@ const WoWSpecs: React.FC = () => {
 						style={{ backgroundColor: `${classColor}` }}
 					>
 						<div className="flex flex-row gap-4 justify-center items-center align-middle">
-							{Object.entries(classSpecs).map(([specName, spec]) => (
+							{Object.entries(classSpecs).map(([specName]) => (
 								<div key={specName} className="flex h-[30px] w-[30px]">
-									<img
-										src={spec["icon-link"]}
-										alt={spec.spec}
+									<SpecIcon
+										src={specName}
 										className="rounded-md border-2 border-black cursor-grab"
 									/>
 								</div>
