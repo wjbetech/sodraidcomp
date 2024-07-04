@@ -1,286 +1,243 @@
 [
-	{
-		"className": "Druid",
-		"specs": [
-			{
-				"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_starfall.jpg",
-				"buffs": ["Mark of the Wild", "Moonkin Aura"],
-				"debuffs": ["Faerie Fire"],
-				"abilities": ["Rebirth", "Innervate", "Tranquility"],
-				"specName": "Balance"
-			},
-			{
-				"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_catform.jpg",
-				"buffs": ["Mark of the Wild", "Leader of the Pack"],
-				"debuffs": ["Faerie Fire"],
-				"abilities": ["Rebirth", "Innervate", "Tranquility"],
-				"specName": "Feral (Cat)"
-			},
-			{
-				"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_racial_bearform.jpg",
-				"buffs": ["Mark of the Wild", "Leader of the Pack"],
-				"debuffs": ["Faerie Fire"],
-				"abilities": ["Rebirth", "Innervate", "Tranquility"],
-				"specName": "Feral (Bear)"
-			},
-			{
-				"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_healingtouch.jpg",
-				"buffs": ["Mark of the Wild"],
-				"debuffs": ["Faerie Fire"],
-				"abilities": ["Rebirth", "Innervate", "Tranquility"],
-				"specName": "Restoration"
-			}
-		]
-	},
-	{
-		"className": "Hunter",
-		"specs": [
-			{
-				"Beast Mastery": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_beasttaming.jpg",
-					"buffs": [],
-					"debuffs": ["Hunter's Mark"],
-					"abilities": ["Tranquilizing Shot"]
-				},
-				"Marksmanship": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_marksmanship.jpg",
-					"buffs": ["Trueshot Aura"],
-					"debuffs": ["Hunter's Mark"],
-					"abilities": ["Tranquilizing Shot"]
-				},
-				"Survival": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_swiftstrike.jpg",
-					"buffs": [],
-					"debuffs": ["Hunter's Mark"],
-					"abilities": ["Tranquilizing Shot"]
-				}
-			}
-		]
-	},
-	{
-		"className": "Mage",
-		"specs": [
-			{
-				"Arcane": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_magicalsentry.jpg",
-					"buffs": ["Arcane Intellect"],
-					"debuffs": [],
-					"abilities": ["Remove Lesser Curse"]
-				},
-				"Fire": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_firebolt02.jpg",
-					"buffs": ["Arcane Intellect"],
-					"debuffs": ["Fire Vulnerability"],
-					"abilities": ["Remove Lesser Curse"]
-				},
-				"Frost": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_frostbolt02.jpg",
-					"buffs": ["Arcane Intellect"],
-					"debuffs": ["Winter's Chill"],
-					"abilities": ["Remove Lesser Curse"]
-				}
-			}
-		]
-	},
-	{
-		"className": "Paladin",
-		"specs": [
-			{
-				"Holy": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holybolt.jpg",
-					"buffs": [
-						"Blessing of Kings",
-						"Blessing of Wisdom",
-						"Blessing of Might",
-						"Blessing of Salvation"
-					],
-					"debuffs": [],
-					"abilities": [
-						"Blessing of Protection",
-						"Blessing of Freedom",
-						"Cleanse"
-					]
-				},
-				"Protection": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_devotionaura.jpg",
-					"buffs": [
-						"Blessing of Kings",
-						"Blessing of Wisdom",
-						"Blessing of Might",
-						"Blessing of Salvation"
-					],
-					"debuffs": [],
-					"abilities": [
-						"Blessing of Protection",
-						"Blessing of Freedom",
-						"Cleanse"
-					]
-				},
-				"Retribution": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_auraoflight.jpg",
-					"buffs": [
-						"Blessing of Kings",
-						"Blessing of Wisdom",
-						"Blessing of Might",
-						"Blessing of Salvation"
-					],
-					"debuffs": ["Vindication"],
-					"abilities": [
-						"Blessing of Protection",
-						"Blessing of Freedom",
-						"Cleanse"
-					]
-				}
-			}
-		]
-	},
-	{
-		"className": "Priest",
-		"specs": [
-			{
-				"Discipline": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_wordfortitude.jpg",
-					"buffs": [
-						"Power Word: Fortitude",
-						"Shadow Resistance",
-						"Divine Spirit"
-					],
-					"debuffs": [],
-					"abilities": ["Power Infusion", "Cure Disease", "Dispel Magic"]
-				},
-				"Holy": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_guardianspirit.jpg",
-					"buffs": ["Power Word: Fortitude", "Shadow Resistance"],
-					"debuffs": [],
-					"abilities": ["Power Infusion", "Cure Disease", "Dispel Magic"]
-				},
-				"Shadow": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadowwordpain.jpg",
-					"buffs": ["Power Word: Fortitude", "Shadow Resistance"],
-					"debuffs": ["Shadow Vulnerability (Priest)"],
-					"abilities": [
-						"Power Infusion",
-						"Cure Disease",
-						"Dispel Magic",
-						"Silence"
-					]
-				}
-			}
-		]
-	},
-	{
-		"className": "Rogue",
-		"specs": [
-			{
-				"Assassination": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
-					"buffs": [],
-					"debuffs": ["Improved Expose Armor"],
-					"abilities": []
-				},
-				"Combat": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_backstab.jpg",
-					"buffs": [],
-					"debuffs": ["Improved Expose Armor"],
-					"abilities": []
-				},
-				"Subtlety": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_stealth.jpg",
-					"buffs": [],
-					"debuffs": ["Improved Expose Armor"],
-					"abilities": []
-				}
-			}
-		]
-	},
-	{
-		"className": "Shaman",
-		"specs": [
-			{
-				"Elemental": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightning.jpg",
-					"buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
-					"debuffs": [],
-					"abilities": ["Cure Poison", "Cure Disease"]
-				},
-				"Enhancement": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightningshield.jpg",
-					"buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
-					"debuffs": ["Stormstrike"],
-					"abilities": ["Cure Poison", "Cure Disease"]
-				},
-				"Restoration": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_magicimmunity.jpg",
-					"buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
-					"debuffs": [],
-					"abilities": ["Mana Tide Totem"]
-				}
-			}
-		]
-	},
-	{
-		"className": "Warlock",
-		"specs": [
-			{
-				"Affliction": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_deathcoil.jpg",
-					"buffs": ["Blood Pact"],
-					"debuffs": [
-						"Curse of Shadow",
-						"Curse of Recklessness",
-						"Curse of Elements",
-						"Shadow Vulnerability (Warlock)"
-					],
-					"abilities": ["Cure Poison", "Cure Disease", "Soulstone Resurrection"]
-				},
-				"Demonology": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_metamorphosis.jpg",
-					"buffs": ["Blood Pact"],
-					"debuffs": [
-						"Curse of Shadow",
-						"Curse of Recklessness",
-						"Curse of Elements",
-						"Shadow Vulnerability (Warlock)"
-					],
-					"abilities": ["Cure Poison", "Cure Disease", "Soulstone Resurrection"]
-				},
-				"Destruction": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_rainoffire.jpg",
-					"buffs": ["Blood Pact"],
-					"debuffs": [
-						"Curse of Shadow",
-						"Curse of Recklessness",
-						"Curse of Elements",
-						"Shadow Vulnerability (Warlock)"
-					],
-					"abilities": ["Cure Poison", "Cure Disease", "Soulstone Resurrection"]
-				}
-			}
-		]
-	},
-	{
-		"className": "Warrior",
-		"specs": [
-			{
-				"Arms": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
-					"buffs": ["Battle Shout"],
-					"debuffs": ["Sunder Armor"],
-					"abilities": ["Demoralizing Shout"]
-				},
-				"Fury": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_innerrage.jpg",
-					"buffs": ["Battle Shout"],
-					"debuffs": ["Sunder Armor"],
-					"abilities": ["Demoralizing Shout"]
-				},
-				"Protection": {
-					"icon-link": "https://wow.zamimg.com/images/wow/icons/medium/inv_shield_06.jpg",
-					"buffs": ["Battle Shout"],
-					"debuffs": ["Sunder Armor"],
-					"abilities": ["Demoralizing Shout"]
-				}
-			}
-		]
-	}
+  {
+    "className": "Druid",
+    "specs": [
+      {
+        "specName": "Balance",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_starfall.jpg",
+        "buffs": ["Mark of the Wild", "Moonkin Aura"],
+        "debuffs": ["Faerie Fire"],
+        "abilities": ["Rebirth", "Innervate", "Tranquility"]
+      },
+      {
+        "specName": "Feral (Cat)",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_catform.jpg",
+        "buffs": ["Mark of the Wild", "Leader of the Pack"],
+        "debuffs": ["Faerie Fire"],
+        "abilities": ["Rebirth", "Innervate", "Tranquility"]
+      },
+      {
+        "specName": "Feral (Bear)",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_racial_bearform.jpg",
+        "buffs": ["Mark of the Wild", "Leader of the Pack"],
+        "debuffs": ["Faerie Fire"],
+        "abilities": ["Rebirth", "Innervate", "Tranquility"]
+      },
+      {
+        "specName": "Restoration",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_healingtouch.jpg",
+        "buffs": ["Mark of the Wild"],
+        "debuffs": ["Faerie Fire"],
+        "abilities": ["Rebirth", "Innervate", "Tranquility"]
+      }
+    ]
+  },
+  {
+    "className": "Hunter",
+    "specs": [
+      {
+        "specName": "Beast Mastery",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_beasttaming.jpg",
+        "buffs": [],
+        "debuffs": ["Hunter's Mark"],
+        "abilities": ["Tranquilizing Shot"]
+      },
+      {
+        "specName": "Marksmanship",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_marksmanship.jpg",
+        "buffs": ["Trueshot Aura"],
+        "debuffs": ["Hunter's Mark"],
+        "abilities": ["Tranquilizing Shot"]
+      },
+      {
+        "specName": "Survival",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_swiftstrike.jpg",
+        "buffs": [],
+        "debuffs": ["Hunter's Mark"],
+        "abilities": ["Tranquilizing Shot"]
+      }
+    ]
+  },
+  {
+    "className": "Mage",
+    "specs": [
+      {
+        "specName": "Arcane",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_magicalsentry.jpg",
+        "buffs": ["Arcane Intellect"],
+        "debuffs": [],
+        "abilities": ["Remove Lesser Curse"]
+      },
+      {
+        "specName": "Fire",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_firebolt02.jpg",
+        "buffs": ["Arcane Intellect"],
+        "debuffs": ["Fire Vulnerability"],
+        "abilities": ["Remove Lesser Curse"]
+      },
+      {
+        "specName": "Frost",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_frostbolt02.jpg",
+        "buffs": ["Arcane Intellect"],
+        "debuffs": ["Winter's Chill"],
+        "abilities": ["Remove Lesser Curse"]
+      }
+    ]
+  },
+  {
+    "className": "Paladin",
+    "specs": [
+      {
+        "specName": "Holy",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holybolt.jpg",
+        "buffs": ["Blessing of Kings", "Blessing of Wisdom", "Blessing of Might", "Blessing of Salvation"],
+        "debuffs": [],
+        "abilities": ["Blessing of Protection", "Blessing of Freedom", "Cleanse"]
+      },
+      {
+        "specName": "Protection",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_devotionaura.jpg",
+        "buffs": ["Blessing of Kings", "Blessing of Wisdom", "Blessing of Might", "Blessing of Salvation"],
+        "debuffs": [],
+        "abilities": ["Blessing of Protection", "Blessing of Freedom", "Cleanse"]
+      },
+      {
+        "specName": "Retributionb",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_auraoflight.jpg",
+        "buffs": ["Blessing of Kings", "Blessing of Wisdom", "Blessing of Might", "Blessing of Salvation"],
+        "debuffs": ["Vindication"],
+        "abilities": ["Blessing of Protection", "Blessing of Freedom", "Cleanse"]
+      }
+    ]
+  },
+  {
+    "className": "Priest",
+    "specs": [
+      {
+        "specName": "Discipline",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_wordfortitude.jpg",
+        "buffs": ["Power Word: Fortitude", "Shadow Resistance", "Divine Spirit"],
+        "debuffs": [],
+        "abilities": ["Power Infusion", "Cure Disease", "Dispel Magic"]
+      },
+      {
+        "specName": "Holy",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_guardianspirit.jpg",
+        "buffs": ["Power Word: Fortitude", "Shadow Resistance"],
+        "debuffs": [],
+        "abilities": ["Power Infusion", "Cure Disease", "Dispel Magic"]
+      },
+      {
+        "specName": "Shadow",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadowwordpain.jpg",
+        "buffs": ["Power Word: Fortitude", "Shadow Resistance"],
+        "debuffs": ["Shadow Vulnerability (Priest)"],
+        "abilities": ["Power Infusion", "Cure Disease", "Dispel Magic", "Silence"]
+      }
+    ]
+  },
+  {
+    "className": "Rogue",
+    "specs": [
+      {
+        "specName": "Assassination",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
+        "buffs": [],
+        "debuffs": ["Improved Expose Armor"],
+        "abilities": []
+      },
+      {
+        "specName": "Combat",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_backstab.jpg",
+        "buffs": [],
+        "debuffs": ["Improved Expose Armor"],
+        "abilities": []
+      },
+      {
+        "specName": "Subtlety",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_stealth.jpg",
+        "buffs": [],
+        "debuffs": ["Improved Expose Armor"],
+        "abilities": []
+      }
+    ]
+  },
+  {
+    "className": "Shaman",
+    "specs": [
+      {
+        "specName": "Elemental",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightning.jpg",
+        "buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
+        "debuffs": [],
+        "abilities": ["Cure Poison", "Cure Disease"]
+      },
+      {
+        "specName": "Enhancement",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightningshield.jpg",
+        "buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
+        "debuffs": ["Stormstrike"],
+        "abilities": ["Cure Poison", "Cure Disease"]
+      },
+      {
+        "specName": "Restoration",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_magicimmunity.jpg",
+        "buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
+        "debuffs": [],
+        "abilities": ["Mana Tide Totem"]
+      }
+    ]
+  },
+  {
+    "className": "Warlock",
+    "specs": [
+      {
+        "specName": "Affliction",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_deathcoil.jpg",
+        "buffs": ["Blood Pact"],
+        "debuffs": ["Curse of Shadow", "Curse of Recklessness", "Curse of Elements", "Shadow Vulnerability (Warlock)"],
+        "abilities": ["Cure Poison", "Cure Disease", "Soulstone Resurrection"]
+      },
+      {
+        "specName": "Demonology",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_metamorphosis.jpg",
+        "buffs": ["Blood Pact"],
+        "debuffs": ["Curse of Shadow", "Curse of Recklessness", "Curse of Elements", "Shadow Vulnerability (Warlock)"],
+        "abilities": ["Cure Poison", "Cure Disease", "Soulstone Resurrection"]
+      },
+      {
+        "specName": "Destruction",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_rainoffire.jpg",
+        "buffs": ["Blood Pact"],
+        "debuffs": ["Curse of Shadow", "Curse of Recklessness", "Curse of Elements", "Shadow Vulnerability (Warlock)"],
+        "abilities": ["Cure Poison", "Cure Disease", "Soulstone Resurrection"]
+      }
+    ]
+  },
+  {
+    "className": "Warrior",
+    "specs": [
+      {
+        "specName": "Arms",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
+        "buffs": ["Battle Shout"],
+        "debuffs": ["Sunder Armor"],
+        "abilities": ["Demoralizing Shout"]
+      },
+      {
+        "specName": "Fury",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_innerrage.jpg",
+        "buffs": ["Battle Shout"],
+        "debuffs": ["Sunder Armor"],
+        "abilities": ["Demoralizing Shout"]
+      },
+      {
+        "specName": "Protection",
+        "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/inv_shield_06.jpg",
+        "buffs": ["Battle Shout"],
+        "debuffs": ["Sunder Armor"],
+        "abilities": ["Demoralizing Shout"]
+      }
+    ]
+  }
 ]

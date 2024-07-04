@@ -1,6 +1,27 @@
-import classesAndSpecs from "../specs.json";
+import myData from '../specs.json';
 
-// grab class names
-const classAndSpecData = classesAndSpecs.map((classObj) => classObj.className);
+// grab *only* class names
+const classNames = myData.map((d) => d.className);
 
-export default { classAndSpecData };
+// grab *only* classes and specs
+function handleClassAndSpec(data) {
+  const result = [];
+
+  for (const d of data) {
+    for (const spec of d.specs) {
+      result.push({
+        className: d.className,
+        specName: spec.specName
+      });
+    }
+  }
+
+  return result;
+}
+
+const classesAndSpecs = handleClassAndSpec(myData);
+
+// grab *all* data raw
+const allData = myData;
+
+export { classNames, classesAndSpecs, allData };
