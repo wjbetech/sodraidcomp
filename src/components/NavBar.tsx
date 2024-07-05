@@ -1,6 +1,6 @@
 export default function NavBar() {
 	return (
-		<nav className="mt-2">
+		<nav className="p-4">
 			<div className="flex gap-6 p-4 m-auto justify-center">
 				<a href="/about">
 					<h3>About</h3>
