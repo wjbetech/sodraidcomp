@@ -1,12 +1,13 @@
-import specsData from "../specs.json";
 import colorByClass from "../utils/classColor";
+<<<<<<< HEAD
 import { SpecIcon } from "./Spec";
+=======
+import { classNames, allData, classAndSpecs } from "../utils/specDataHandler";
+>>>>>>> origin/master
 
-interface SpecData {
-	spec: string;
-	"icon-link": string;
-}
+// *REMEMBER THAT CLASS IS A TAKEN WORD*
 
+<<<<<<< HEAD
 interface ClassSpecs {
 	[specName: string]: SpecData;
 	spec: SpecData;
@@ -42,8 +43,31 @@ const WoWSpecs: React.FC = ({ spec }) => {
 					</div>
 				);
 			})}
+=======
+const WoWClasses = () => {
+	console.log(classAndSpecs);
+
+	return (
+		<div className="grid grid-cols-2 xl:grid-cols-3 my-6 gap-2">
+			{Object.keys(classAndSpecs).map((className) => (
+				<div
+					key={className}
+					className="flex flex-row gap-1 border-[2px] rounded-md py-[6px] px-[18px] justify-evenly max-w-[206px]"
+					style={{ backgroundColor: `${colorByClass(className)}` }}
+				>
+					{classAndSpecs[className][0].map((spec) => (
+						<img
+							key={spec}
+							className="w-[30px] h-[30px] rounded-md"
+							src={spec.iconLink}
+							alt={spec.specName}
+						/>
+					))}
+				</div>
+			))}
+>>>>>>> origin/master
 		</div>
 	);
 };
 
-export default WoWSpecs;
+export default WoWClasses;

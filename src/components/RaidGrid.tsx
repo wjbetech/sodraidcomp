@@ -1,12 +1,9 @@
 import Party from "./Party";
-import { buffs } from "../utils/buffs";
 
 export default function RaidGrid() {
-	console.log(buffs);
-
 	return (
 		<div className="w-full">
-			<div className="grid grid-cols-4">
+			<div className="grid grid-cols-2 xl:grid-cols-4 gap-y-4 gap-x-4">
 				<Party componentId={1} />
 				<Party componentId={2} />
 				<Party componentId={3} />

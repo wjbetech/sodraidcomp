@@ -1,5 +1,6 @@
 import "./App.css";
-import WoWSpecs from "./components/ClassesAndSpecs";
+import WoWClasses from "./components/ClassesAndSpecs";
+import NavBar from "./components/NavBar";
 import RaidGrid from "./components/RaidGrid";
 
 // DnDKit
@@ -8,12 +9,13 @@ import { DndContext } from "@dnd-kit/core";
 function App() {
 	return (
 		<DndContext>
-			<main className="">
+			<NavBar />
+			<main className="w-[80%] m-auto">
 				<h1 className="">SoD Raid Composition</h1>
 				<span className="text-xs text-gray-400">
 					by Valruna @ Living Flame EU
 				</span>
-				<WoWSpecs />
+				<WoWClasses />
 				<div className="m-auto w-full">
 					<RaidGrid />
 				</div>
