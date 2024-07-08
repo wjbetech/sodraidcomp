@@ -1,4 +1,4 @@
-type ClassName =
+export type ClassName =
 	| "Druid"
 	| "Mage"
 	| "Hunter"
