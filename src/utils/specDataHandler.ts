@@ -1,21 +1,34 @@
 import myData from "../specs.json";
 
+// types for data
+interface Spec {
+	specName: string;
+}
+
+interface WowClass {
+	className: string;
+	specs: Spec[];
+}
+
+interface ClassAndSpecs {
+	className: string;
+	specName: string;
+}
+
 // grab *only* class names
-const classNames = myData.map((d) => d.className);
+const classNames: string[] = myData.map((d) => d.className);
 
 // grab *all* data raw
-const allData = myData;
+const allData: WowClass[] = myData;
 
 // grab classes with their specs & info
-const classAndSpecs = [];
+const classAndSpecs: ClassAndSpecs[] = [];
 
 for (const wowClass of myData) {
 	const { className, specs } = wowClass;
-	if (!classAndSpecs[className]) {
-		classAndSpecs[className] = [];
+	for (const spec of specs) {
+		classAndSpecs.push({ className, specName: spec.specName });
 	}
-
-	classAndSpecs[className].push(specs);
 }
 
 export { classNames, allData, classAndSpecs };
