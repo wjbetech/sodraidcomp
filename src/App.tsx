@@ -3,12 +3,9 @@ import WoWClasses from "./components/ClassesAndSpecs";
 import NavBar from "./components/NavBar";
 import RaidGrid from "./components/RaidGrid";
 
-// DnDKit
-import { DndContext } from "@dnd-kit/core";
-
 function App() {
 	return (
-		<DndContext>
+		<div>
 			<NavBar />
 			<main className="w-[80%] m-auto">
 				<h1 className="">SoD Raid Composition</h1>
@@ -20,7 +17,7 @@ function App() {
 					<RaidGrid />
 				</div>
 			</main>
-		</DndContext>
+		</div>
 	);
 }
 
