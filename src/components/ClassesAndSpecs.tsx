@@ -1,4 +1,4 @@
-import { DndContext, type DragEndEvent, useDraggable } from '@dnd-kit/core';
+import { useDraggable } from '@dnd-kit/core';
 import { CSS } from '@dnd-kit/utilities';
 import colorByClass, { type ClassName } from '../utils/classColor';
 import { classAndSpecsData } from '../utils/specDataHandler';
@@ -27,16 +27,6 @@ const DraggableItem = ({ id, iconLink, specName }: { id: string; iconLink: strin
 };
 
 const WoWClasses = () => {
-  // const handleDragStart = (event: DragEvent) => {
-  // 	console.log("Dragging started!");
-  // 	console.log(event);
-  // };
-
-  // const handleDragEnd = (event: DragEndEvent) => {
-  // 	console.log("Dragging ended!");
-  // 	console.log(event);
-  // };
-
   return (
     <div className="grid grid-cols-2 xl:grid-cols-3 my-6 gap-2">
       {Object.keys(classAndSpecsData).map((className) => (
