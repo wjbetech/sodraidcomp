@@ -4,7 +4,7 @@
     "specs": [
       {
         "specName": "Balance",
-        "id": 1,
+        "id": "1",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_starfall.jpg",
         "buffs": ["Mark of the Wild", "Moonkin Aura"],
         "debuffs": ["Faerie Fire"],
@@ -12,7 +12,7 @@
       },
       {
         "specName": "Feral (Cat)",
-        "id": 2,
+        "id": "2",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_catform.jpg",
         "buffs": ["Mark of the Wild", "Leader of the Pack"],
         "debuffs": ["Faerie Fire"],
@@ -20,7 +20,7 @@
       },
       {
         "specName": "Feral (Bear)",
-        "id": 3,
+        "id": "3",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_racial_bearform.jpg",
         "buffs": ["Mark of the Wild", "Leader of the Pack"],
         "debuffs": ["Faerie Fire"],
@@ -28,7 +28,7 @@
       },
       {
         "specName": "Restoration",
-        "id": 4,
+        "id": "4",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_healingtouch.jpg",
         "buffs": ["Mark of the Wild"],
         "debuffs": ["Faerie Fire"],
@@ -41,7 +41,7 @@
     "specs": [
       {
         "specName": "Beast Mastery",
-        "id": 5,
+        "id": "5",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_beasttaming.jpg",
         "buffs": [],
         "debuffs": ["Hunter's Mark"],
@@ -49,7 +49,7 @@
       },
       {
         "specName": "Marksmanship",
-        "id": 6,
+        "id": "6",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_marksmanship.jpg",
         "buffs": ["Trueshot Aura"],
         "debuffs": ["Hunter's Mark"],
@@ -57,7 +57,7 @@
       },
       {
         "specName": "Survival",
-        "id": 7,
+        "id": "7",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_swiftstrike.jpg",
         "buffs": [],
         "debuffs": ["Hunter's Mark"],
@@ -70,7 +70,7 @@
     "specs": [
       {
         "specName": "Arcane",
-        "id": 8,
+        "id": "8",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_magicalsentry.jpg",
         "buffs": ["Arcane Intellect"],
         "debuffs": [],
@@ -78,7 +78,7 @@
       },
       {
         "specName": "Fire",
-        "id": 9,
+        "id": "9",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_firebolt02.jpg",
         "buffs": ["Arcane Intellect"],
         "debuffs": ["Fire Vulnerability"],
@@ -86,7 +86,7 @@
       },
       {
         "specName": "Frost",
-        "id": 10,
+        "id": "10",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_frostbolt02.jpg",
         "buffs": ["Arcane Intellect"],
         "debuffs": ["Winter's Chill"],
@@ -99,7 +99,7 @@
     "specs": [
       {
         "specName": "Holy",
-        "id": 11,
+        "id": "11",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holybolt.jpg",
         "buffs": ["Blessing of Kings", "Blessing of Wisdom", "Blessing of Might", "Blessing of Salvation"],
         "debuffs": [],
@@ -107,7 +107,7 @@
       },
       {
         "specName": "Protection (Paladin)",
-        "id": 12,
+        "id": "12",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_devotionaura.jpg",
         "buffs": ["Blessing of Kings", "Blessing of Wisdom", "Blessing of Might", "Blessing of Salvation"],
         "debuffs": [],
@@ -115,7 +115,7 @@
       },
       {
         "specName": "Retributionb",
-        "id": 13,
+        "id": "13",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_auraoflight.jpg",
         "buffs": ["Blessing of Kings", "Blessing of Wisdom", "Blessing of Might", "Blessing of Salvation"],
         "debuffs": ["Vindication"],
@@ -128,7 +128,7 @@
     "specs": [
       {
         "specName": "Discipline",
-        "id": 14,
+        "id": "14",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_wordfortitude.jpg",
         "buffs": ["Power Word: Fortitude", "Shadow Resistance", "Divine Spirit"],
         "debuffs": [],
@@ -136,7 +136,7 @@
       },
       {
         "specName": "Holy",
-        "id": 15,
+        "id": "15",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_guardianspirit.jpg",
         "buffs": ["Power Word: Fortitude", "Shadow Resistance"],
         "debuffs": [],
@@ -144,7 +144,7 @@
       },
       {
         "specName": "Shadow",
-        "id": 16,
+        "id": "16",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadowwordpain.jpg",
         "buffs": ["Power Word: Fortitude", "Shadow Resistance"],
         "debuffs": ["Shadow Vulnerability (Priest)"],
@@ -157,7 +157,7 @@
     "specs": [
       {
         "specName": "Assassination",
-        "id": 17,
+        "id": "17",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
         "buffs": [],
         "debuffs": ["Improved Expose Armor"],
@@ -165,7 +165,7 @@
       },
       {
         "specName": "Combat",
-        "id": 18,
+        "id": "18",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_backstab.jpg",
         "buffs": [],
         "debuffs": ["Improved Expose Armor"],
@@ -173,7 +173,7 @@
       },
       {
         "specName": "Subtlety",
-        "id": 19,
+        "id": "19",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_stealth.jpg",
         "buffs": [],
         "debuffs": ["Improved Expose Armor"],
@@ -186,7 +186,7 @@
     "specs": [
       {
         "specName": "Elemental",
-        "id": 20,
+        "id": "20",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightning.jpg",
         "buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
         "debuffs": [],
@@ -194,7 +194,7 @@
       },
       {
         "specName": "Enhancement",
-        "id": 21,
+        "id": "21",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightningshield.jpg",
         "buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
         "debuffs": ["Stormstrike"],
@@ -202,7 +202,7 @@
       },
       {
         "specName": "Restoration",
-        "id": 22,
+        "id": "22",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_magicimmunity.jpg",
         "buffs": ["Mana Spring Totem", "Strength of Earth Totem"],
         "debuffs": [],
@@ -215,7 +215,7 @@
     "specs": [
       {
         "specName": "Affliction",
-        "id": 23,
+        "id": "23",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_deathcoil.jpg",
         "buffs": ["Blood Pact"],
         "debuffs": ["Curse of Shadow", "Curse of Recklessness", "Curse of Elements", "Shadow Vulnerability (Warlock)"],
@@ -223,7 +223,7 @@
       },
       {
         "specName": "Demonology",
-        "id": 24,
+        "id": "24",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_metamorphosis.jpg",
         "buffs": ["Blood Pact"],
         "debuffs": ["Curse of Shadow", "Curse of Recklessness", "Curse of Elements", "Shadow Vulnerability (Warlock)"],
@@ -231,7 +231,7 @@
       },
       {
         "specName": "Destruction",
-        "id": 25,
+        "id": "25",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_rainoffire.jpg",
         "buffs": ["Blood Pact"],
         "debuffs": ["Curse of Shadow", "Curse of Recklessness", "Curse of Elements", "Shadow Vulnerability (Warlock)"],
@@ -244,7 +244,7 @@
     "specs": [
       {
         "specName": "Arms",
-        "id": 26,
+        "id": "26",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_eviscerate.jpg",
         "buffs": ["Battle Shout"],
         "debuffs": ["Sunder Armor"],
@@ -252,7 +252,7 @@
       },
       {
         "specName": "Fury",
-        "id": 27,
+        "id": "27",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_innerrage.jpg",
         "buffs": ["Battle Shout"],
         "debuffs": ["Sunder Armor"],
@@ -260,7 +260,7 @@
       },
       {
         "specName": "Protection (Warrior)",
-        "id": 28,
+        "id": "28",
         "iconLink": "https://wow.zamimg.com/images/wow/icons/medium/inv_shield_06.jpg",
         "buffs": ["Battle Shout"],
         "debuffs": ["Sunder Armor"],

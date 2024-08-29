@@ -3,7 +3,7 @@ import { CSS } from "@dnd-kit/utilities";
 import colorByClass, { type ClassName } from "../utils/classColor";
 import { classAndSpecsData } from "../utils/specDataHandler";
 
-const DraggableItem = ({ id, iconLink, specName }: { id: number; iconLink: string; specName: string }) => {
+const DraggableItem = ({ id, iconLink, specName }: { id: string; iconLink: string; specName: string }) => {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
     id
   });
@@ -14,6 +14,7 @@ const DraggableItem = ({ id, iconLink, specName }: { id: number; iconLink: strin
 
   return (
     <img
+      id={id}
       ref={setNodeRef}
       {...attributes}
       {...listeners}

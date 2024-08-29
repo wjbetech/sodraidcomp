@@ -7,7 +7,7 @@ type SpecId = string;
 
 export default function RaidGrid() {
   // dnd-kit seems to require "slots" to drop items into
-  // we have to create manipulatable "slots" for the raid slots
+  // we have to create mutable "slots" for the raid slots
   // regardless, so building an array here to represent the raid
   // is probably the next logical step
   const [raidGroups, setRaidGroups] = useState<string[][]>([
