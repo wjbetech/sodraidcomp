@@ -2,7 +2,7 @@ import './App.css';
 import WoWClasses from './components/ClassesAndSpecs';
 import NavBar from './components/NavBar';
 import RaidGrid from './components/RaidGrid';
-import { DndContext, DragStartEvent } from '@dnd-kit/core';
+import { DndContext, type DragStartEvent, type DragEndEvent } from '@dnd-kit/core';
 
 function App() {
   const handleDragStart = (event: DragStartEvent) => {

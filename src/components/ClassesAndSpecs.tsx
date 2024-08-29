@@ -1,9 +1,9 @@
-import { useDraggable } from '@dnd-kit/core';
-import { CSS } from '@dnd-kit/utilities';
-import colorByClass, { type ClassName } from '../utils/classColor';
-import { classAndSpecsData } from '../utils/specDataHandler';
+import { useDraggable } from "@dnd-kit/core";
+import { CSS } from "@dnd-kit/utilities";
+import colorByClass, { type ClassName } from "../utils/classColor";
+import { classAndSpecsData } from "../utils/specDataHandler";
 
-const DraggableItem = ({ id, iconLink, specName }: { id: string; iconLink: string; specName: string }) => {
+const DraggableItem = ({ id, iconLink, specName }: { id: number; iconLink: string; specName: string }) => {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
     id
   });
@@ -14,7 +14,6 @@ const DraggableItem = ({ id, iconLink, specName }: { id: string; iconLink: strin
 
   return (
     <img
-      id={id}
       ref={setNodeRef}
       {...attributes}
       {...listeners}
@@ -28,17 +27,17 @@ const DraggableItem = ({ id, iconLink, specName }: { id: string; iconLink: strin
 
 const WoWClasses = () => {
   return (
-    <div className="grid grid-cols-2 xl:grid-cols-3 my-6 gap-2">
+    <div className="grid grid-cols-3 gap-2 m-auto place-items-center my-6">
       {Object.keys(classAndSpecsData).map((className) => (
         <div
           key={className}
-          className="flex flex-row gap-1 border-[2px] rounded-md py-[6px] px-[18px] justify-evenly max-w-[206px]"
+          className="flex flex-row gap-1 border-[2px] rounded-md py-[6px] px-[18px] justify-evenly min-w-[200px] max-w-[240px]"
           style={{
             backgroundColor: `${colorByClass(className as ClassName)}`
           }}
         >
           {classAndSpecsData[className].map((spec) => (
-            <DraggableItem key={spec.specName} id={spec.iconLink} iconLink={spec.iconLink} specName={spec.specName} />
+            <DraggableItem key={spec.specName} id={spec.id} iconLink={spec.iconLink} specName={spec.specName} />
           ))}
         </div>
       ))}

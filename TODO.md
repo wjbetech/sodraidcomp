@@ -4,10 +4,13 @@
 [] - allow dynamic click to delete a spec
 [] - allow dynamic placing of spec
 [] - allow users to save comps
-[] - allow users to rename the player slots 
+[] - allow users to rename the player slots
 
---------------------------------------------
+---
 
 [] - configure an empty indexed 20 slot array
 
+---
 
+[] - store confirmed raid buffs in state and filter over state
+to sort raid/party/personal buffs
