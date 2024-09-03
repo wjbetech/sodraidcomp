@@ -1,27 +1,25 @@
 import Party from "./Party";
 import { useState } from "react";
 
-type RaidGroup = string[];
-type SlotIndex = number;
-type SpecId = string;
+type Spec = {
+  id: string;
+  iconLink: string;
+  specName: string;
+};
 
 export default function RaidGrid() {
-  // dnd-kit seems to require "slots" to drop items into
-  // we have to create mutable "slots" for the raid slots
-  // regardless, so building an array here to represent the raid
-  // is probably the next logical step
-  const [raidGroups, setRaidGroups] = useState<string[][]>([
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""]
+  // Allow `Spec` or `null` in the raidGroups array
+  const [raidGroups, setRaidGroups] = useState<(Spec | null)[][]>([
+    [null, null, null, null, null],
+    [null, null, null, null, null],
+    [null, null, null, null, null],
+    [null, null, null, null, null]
   ]);
 
-  // handling drop for each slot in raidGroups
-  const handleDrop = (groupId: number, slotIndex: number, specId: string) => {
+  const handleDrop = (groupId: number, slotIndex: number, spec: Spec) => {
     setRaidGroups((prevGroups) => {
       const newGroups = [...prevGroups];
-      newGroups[groupId][slotIndex] = specId;
+      newGroups[groupId][slotIndex] = spec;
       return newGroups;
     });
   };
@@ -29,12 +27,12 @@ export default function RaidGrid() {
   return (
     <div className="w-full">
       <div className="grid grid-cols-3 xl:grid-cols-4 gap-y-4 gap-x-4">
-        {raidGroups.map((group: RaidGroup, index) => (
+        {raidGroups.map((group, index) => (
           <Party
-            key={Math.floor(index * (Math.random() * 1000))}
+            key={index}
             componentId={index + 1}
             group={group}
-            onDrop={(slotIndex: SlotIndex, specId: SpecId) => handleDrop(index, slotIndex, specId)}
+            onDrop={(slotIndex, spec) => handleDrop(index, slotIndex, spec)}
           />
         ))}
       </div>

@@ -1,5 +1,5 @@
 import { useDroppable } from "@dnd-kit/core";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 interface Spec {
   id: string;
@@ -9,24 +9,20 @@ interface Spec {
 
 interface PlayerSlotProps {
   id: string;
+  assignedSpec: Spec | null;
   onDrop: (spec: Spec) => void;
 }
 
-const DraggableItem = ({ spec }: { spec: Spec }) => {
-  return <img className="w-[30px] h-[30px] rounded-md cursor-pointer" src={spec.iconLink} alt={spec.specName} />;
-};
-
-const PlayerSlot = ({ id, onDrop }: PlayerSlotProps) => {
+const PlayerSlot = ({ id, assignedSpec, onDrop }: PlayerSlotProps) => {
   const { isOver, setNodeRef } = useDroppable({ id });
-  const [assignedSpec, setAssignedSpec] = useState<Spec | null>(null);
 
   useEffect(() => {
     if (isOver && !assignedSpec) {
-      const droppableSpec: Spec = JSON.parse(id);
-      setAssignedSpec(droppableSpec);
-      onDrop(droppableSpec);
+      // If the slot is empty and being hovered over, call onDrop
+      const spec = { id: "spec-id", iconLink: "spec-icon", specName: "spec-name" }; // replace this with actual spec data
+      onDrop(spec);
     }
-  }, [isOver, assignedSpec, onDrop, id]);
+  }, [isOver, assignedSpec, onDrop]);
 
   return (
     <div
@@ -37,7 +33,7 @@ const PlayerSlot = ({ id, onDrop }: PlayerSlotProps) => {
     >
       {assignedSpec ? (
         <>
-          <DraggableItem spec={assignedSpec} />
+          <img className="w-[30px] h-[30px] rounded-md" src={assignedSpec.iconLink} alt={assignedSpec.specName} />
           <span className="ml-2 text-gray-800">{assignedSpec.specName}</span>
         </>
       ) : (
