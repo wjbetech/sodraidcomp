@@ -1,30 +1,6 @@
-import { useDraggable } from "@dnd-kit/core";
-import { CSS } from "@dnd-kit/utilities";
 import colorByClass, { type ClassName } from "../utils/classColor";
 import { classAndSpecsData } from "../utils/specDataHandler";
-
-const DraggableItem = ({ id, iconLink, specName }: { id: string; iconLink: string; specName: string }) => {
-  const { attributes, listeners, setNodeRef, transform } = useDraggable({
-    id
-  });
-
-  const style = {
-    transform: CSS.Transform.toString(transform)
-  };
-
-  return (
-    <img
-      id={id}
-      ref={setNodeRef}
-      {...attributes}
-      {...listeners}
-      style={style}
-      className="w-[30px] h-[30px] rounded-md cursor-pointer"
-      src={iconLink}
-      alt={specName}
-    />
-  );
-};
+import DraggableItem from "./DraggableItem";
 
 const WoWClasses = () => {
   return (

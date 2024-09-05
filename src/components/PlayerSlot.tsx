@@ -1,5 +1,6 @@
-import { useDroppable } from "@dnd-kit/core";
-import { useEffect } from "react";
+import { useDroppable, useDndMonitor } from "@dnd-kit/core";
+import { useState } from "react";
+import colorByClass, { type ClassName } from "../utils/classColor";
 
 interface Spec {
   id: string;
@@ -9,20 +10,28 @@ interface Spec {
 
 interface PlayerSlotProps {
   id: string;
-  assignedSpec: Spec | null;
+  assignedSpec: Spec | null; // Allow `null` for unassigned slots
   onDrop: (spec: Spec) => void;
 }
 
 const PlayerSlot = ({ id, assignedSpec, onDrop }: PlayerSlotProps) => {
   const { isOver, setNodeRef } = useDroppable({ id });
+  const [currentSpec, setCurrentSpec] = useState<Spec | null>(assignedSpec);
 
-  useEffect(() => {
-    if (isOver && !assignedSpec) {
-      // If the slot is empty and being hovered over, call onDrop
-      const spec = { id: "spec-id", iconLink: "spec-icon", specName: "spec-name" }; // replace this with actual spec data
-      onDrop(spec);
+  useDndMonitor({
+    onDragEnd(event) {
+      const { active, over } = event;
+
+      if (over && over.id === id) {
+        const draggedSpec = active.data.current as Spec;
+
+        if (draggedSpec && draggedSpec.iconLink && draggedSpec.specName) {
+          setCurrentSpec(draggedSpec);
+          onDrop(draggedSpec);
+        }
+      }
     }
-  }, [isOver, assignedSpec, onDrop]);
+  });
 
   return (
     <div
@@ -31,11 +40,11 @@ const PlayerSlot = ({ id, assignedSpec, onDrop }: PlayerSlotProps) => {
         isOver ? "bg-gray-200" : "border-gray-500"
       } hover:bg-white/10`}
     >
-      {assignedSpec ? (
-        <>
-          <img className="w-[30px] h-[30px] rounded-md" src={assignedSpec.iconLink} alt={assignedSpec.specName} />
-          <span className="ml-2 text-gray-800">{assignedSpec.specName}</span>
-        </>
+      {currentSpec ? (
+        <div className="flex gap-2 justify-center items-center">
+          <img className="w-[30px] h-[30px] rounded-md" src={currentSpec.iconLink} alt={currentSpec.specName} />
+          <span className="ml-2 text-white">{currentSpec.specName}</span>
+        </div>
       ) : (
         "Empty Slot"
       )}
