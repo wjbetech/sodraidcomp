@@ -1,3 +1,4 @@
+import { ClassName } from "../utils/classColor";
 import Party from "./Party";
 import { useState } from "react";
 
@@ -5,6 +6,7 @@ type Spec = {
   id: string;
   iconLink: string;
   specName: string;
+  wowClassName: ClassName;
 };
 
 export default function RaidGrid() {

@@ -1,9 +1,11 @@
+import { ClassName } from "../utils/classColor";
 import PlayerSlot from "./PlayerSlot";
 
 interface Spec {
   id: string;
   iconLink: string;
   specName: string;
+  wowClassName: ClassName;
 }
 
 interface PartyProps {
