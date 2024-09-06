@@ -10,7 +10,7 @@ type Spec = {
 };
 
 export default function RaidGrid() {
-  // Allow `Spec` or `null` in the raidGroups array
+  // empty slots either contain a Spec item or null
   const [raidGroups, setRaidGroups] = useState<(Spec | null)[][]>([
     [null, null, null, null, null],
     [null, null, null, null, null],
@@ -24,6 +24,9 @@ export default function RaidGrid() {
       newGroups[groupId][slotIndex] = spec;
       return newGroups;
     });
+    // log out raidGroups to check what level of data is held
+    // we need to get the abilities/buffs/debuffs etc
+    console.log(raidGroups);
   };
 
   return (
@@ -38,9 +41,16 @@ export default function RaidGrid() {
           />
         ))}
       </div>
+
+      {/* display what abilities, buffs and debuffs we have */}
       <div className="mb-6 my-12 p-4 w-full rounded-md flex flex-col border-2 border-gray-600 text-left">
         <span>Moonkin Aura</span>
       </div>
     </div>
   );
 }
+
+// todo:
+// [] - grab the abilities/buffs/debuffs
+// [] - filter those items based on the group and type of ability
+// [] - display filtered items in the bottom display

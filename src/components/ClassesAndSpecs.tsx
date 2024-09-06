@@ -19,7 +19,7 @@ const WoWClasses = () => {
               id={spec.id}
               iconLink={spec.iconLink}
               specName={spec.specName}
-              wowClassName={wowClassName} // Pass wowClassName here
+              wowClassName={wowClassName}
             />
           ))}
         </div>

@@ -11,7 +11,7 @@ interface DraggableItemProps {
 const DraggableItem = ({ id, iconLink, specName, wowClassName }: DraggableItemProps) => {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
     id,
-    data: { id, iconLink, specName, wowClassName } // Attach the actual spec data here
+    data: { id, iconLink, specName, wowClassName }
   });
 
   const style = {

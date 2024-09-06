@@ -11,7 +11,7 @@ interface Spec {
 
 interface PlayerSlotProps {
   id: string;
-  assignedSpec: Spec | null; // Allow `null` for unassigned slots
+  assignedSpec: Spec | null; // empty slots are given null
   onDrop: (spec: Spec) => void;
 }
 

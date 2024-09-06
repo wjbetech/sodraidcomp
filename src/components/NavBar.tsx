@@ -12,3 +12,5 @@ export default function NavBar() {
     </nav>
   );
 }
+
+// todo: fix the positioning you donkey

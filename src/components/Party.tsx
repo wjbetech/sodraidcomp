@@ -10,7 +10,7 @@ interface Spec {
 
 interface PartyProps {
   componentId: number;
-  group: (Spec | null)[]; // Allow `null` in the group array
+  group: (Spec | null)[]; // empty slots are given null
   onDrop: (slotIndex: number, spec: Spec) => void;
 }
 
@@ -22,7 +22,7 @@ export default function Party({ componentId, group, onDrop }: PartyProps) {
         <PlayerSlot
           key={index}
           id={`player-slot-${componentId}-${index + 1}`}
-          assignedSpec={assignedSpec} // Pass assignedSpec to the slot
+          assignedSpec={assignedSpec}
           onDrop={(spec) => onDrop(index, spec)}
         />
       ))}
