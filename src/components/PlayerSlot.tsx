@@ -43,7 +43,7 @@ const PlayerSlot = ({ id, assignedSpec, onDrop }: PlayerSlotProps) => {
   return (
     <div
       ref={setNodeRef}
-      className={`flex items-center justify-center my-2 border-2 rounded-md p-1 max-h-[36px] w-full ${
+      className={`flex items-center justify-center my-2 border-2 rounded-md p-1 max-h-[36px] max-w-[300px] w-full ${
         isOver ? "bg-gray-200" : "border-gray-500"
       } hover:bg-white/10`}
       style={{ backgroundColor }}

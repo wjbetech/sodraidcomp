@@ -16,7 +16,7 @@ interface PartyProps {
 
 export default function Party({ componentId, group, onDrop }: PartyProps) {
   return (
-    <div className="flex flex-col m-auto w-full space-y-1">
+    <div className="flex flex-col m-auto min-w-[300px] max-w-[400px] space-y-1">
       <h5 className="text-gray-500 font-semibold">Group {componentId}</h5>
       {group.map((assignedSpec, index) => (
         <PlayerSlot

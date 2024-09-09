@@ -4,7 +4,7 @@ import DraggableItem from "./DraggableItem";
 
 const WoWClasses = () => {
   return (
-    <div className="grid grid-cols-3 gap-2 m-auto place-items-center my-6">
+    <div className="grid grid-cols-3 gap-2 m-auto place-items-center my-6 max-w-[800px]">
       {Object.keys(classAndSpecsData).map((wowClassName) => (
         <div
           key={wowClassName}
