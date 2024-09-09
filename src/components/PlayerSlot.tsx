@@ -43,13 +43,13 @@ const PlayerSlot = ({ id, assignedSpec, onDrop }: PlayerSlotProps) => {
   return (
     <div
       ref={setNodeRef}
-      className={`flex items-center justify-center my-2 border-2 rounded-md h-[34px] w-full ${
+      className={`flex items-center justify-center my-2 border-2 rounded-md p-2 max-h-[44px] w-full ${
         isOver ? "bg-gray-200" : "border-gray-500"
       } hover:bg-white/10`}
       style={{ backgroundColor }}
     >
       {currentSpec ? (
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex gap-2 w-full justify-between items-center cursor-grab">
           <img className="w-[30px] h-[30px] rounded-md" src={currentSpec.iconLink} alt={currentSpec.specName} />
           <span className="ml-2 font-bold">{currentSpec.specName}</span>
         </div>

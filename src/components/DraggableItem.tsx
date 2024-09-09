@@ -24,7 +24,7 @@ const DraggableItem = ({ id, iconLink, specName, wowClassName }: DraggableItemPr
       {...attributes}
       {...listeners}
       style={style}
-      className="w-[30px] h-[30px] rounded-md cursor-pointer"
+      className="w-[30px] h-[30px] rounded-md cursor-grab"
       src={iconLink}
       alt={specName}
     />

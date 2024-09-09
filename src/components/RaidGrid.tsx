@@ -1,6 +1,7 @@
 import { ClassName } from "../utils/classColor";
 import Party from "./Party";
 import { useState } from "react";
+import RaidBuffs from "./RaidBuffs";
 
 type Spec = {
   id: string;
@@ -43,9 +44,7 @@ export default function RaidGrid() {
       </div>
 
       {/* display what abilities, buffs and debuffs we have */}
-      <div className="mb-6 my-12 p-4 w-full rounded-md flex flex-col border-2 border-gray-600 text-left">
-        <span>Moonkin Aura</span>
-      </div>
+      <RaidBuffs />
     </div>
   );
 }
