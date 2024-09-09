@@ -20,6 +20,9 @@ const WoWClasses = () => {
               iconLink={spec.iconLink}
               specName={spec.specName}
               wowClassName={wowClassName}
+              buffs={spec.buffs}
+              debuffs={spec.debuffs}
+              abilities={spec.abilities}
             />
           ))}
         </div>

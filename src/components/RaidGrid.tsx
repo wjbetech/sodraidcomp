@@ -8,6 +8,9 @@ type Spec = {
   iconLink: string;
   specName: string;
   wowClassName: ClassName;
+  buffs: string[];
+  debuffs: string[];
+  abilities: string[];
 };
 
 export default function RaidGrid() {
@@ -19,6 +22,24 @@ export default function RaidGrid() {
     [null, null, null, null, null]
   ]);
 
+  // state for all the buffs, debuffs and abilities of the raid
+  const [raidBuffs, setRaidBuffs] = useState<Record<string, number>>({});
+  const [raidDebuffs, setRaidDebuffs] = useState<Record<string, number>>({});
+  const [raidAbilities, setRaidAbilities] = useState<Record<string, number>>({});
+
+  // counter for numbers of items in state items
+  const updateCounter = (
+    items: string[],
+    counter: Record<string, number>,
+    setCounter: React.Dispatch<React.SetStateAction<Record<string, number>>>
+  ) => {
+    const updatedCounter = { ...counter };
+    items.forEach((item) => {
+      updatedCounter[item] = (updatedCounter[item] || 0) + 1;
+    });
+    setCounter(updatedCounter);
+  };
+
   const handleDrop = (groupId: number, slotIndex: number, spec: Spec) => {
     setRaidGroups((prevGroups) => {
       const newGroups = [...prevGroups];
@@ -27,12 +48,17 @@ export default function RaidGrid() {
     });
     // log out raidGroups to check what level of data is held
     // we need to get the abilities/buffs/debuffs etc
-    console.log(raidGroups);
+    // console.log(raidGroups);
+
+    // update the counters for buffs, debuffs, abilities
+    updateCounter(spec.buffs, raidBuffs, setRaidBuffs);
+    updateCounter(spec.debuffs, raidDebuffs, setRaidDebuffs);
+    updateCounter(spec.abilities, raidAbilities, setRaidAbilities);
   };
 
   return (
     <div className="w-full">
-      <div className="grid grid-cols-3 xl:grid-cols-4 gap-y-4 gap-x-4">
+      <div className="grid grid-cols-2 xl:grid-cols-4 gap-y-4 gap-x-4 my-10">
         {raidGroups.map((group, index) => (
           <Party
             key={index}
@@ -44,7 +70,7 @@ export default function RaidGrid() {
       </div>
 
       {/* display what abilities, buffs and debuffs we have */}
-      <RaidBuffs />
+      <RaidBuffs buffs={raidBuffs} debuffs={raidDebuffs} abilities={raidAbilities} />
     </div>
   );
 }

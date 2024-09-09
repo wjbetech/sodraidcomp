@@ -1,17 +1,17 @@
-import './App.css';
-import WoWClasses from './components/ClassesAndSpecs';
-import NavBar from './components/NavBar';
-import RaidGrid from './components/RaidGrid';
-import { DndContext, type DragStartEvent, type DragEndEvent } from '@dnd-kit/core';
+import "./App.css";
+import WoWClasses from "./components/ClassesAndSpecs";
+import NavBar from "./components/NavBar";
+import RaidGrid from "./components/RaidGrid";
+import { DndContext, type DragStartEvent, type DragEndEvent } from "@dnd-kit/core";
 
 function App() {
   const handleDragStart = (event: DragStartEvent) => {
-    console.log('Dragging started!');
+    console.log("Dragging started!");
     console.log(event);
   };
 
   const handleDragEnd = (event: DragEndEvent) => {
-    console.log('Dragging ended!');
+    console.log("Dragging ended!");
     console.log(event);
   };
 

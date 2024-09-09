@@ -6,12 +6,15 @@ interface DraggableItemProps {
   iconLink: string;
   specName: string;
   wowClassName: string;
+  buffs: string[];
+  debuffs: string[];
+  abilities: string[];
 }
 
-const DraggableItem = ({ id, iconLink, specName, wowClassName }: DraggableItemProps) => {
+const DraggableItem = ({ id, iconLink, specName, wowClassName, buffs, debuffs, abilities }: DraggableItemProps) => {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
     id,
-    data: { id, iconLink, specName, wowClassName }
+    data: { id, iconLink, specName, wowClassName, buffs, debuffs, abilities }
   });
 
   const style = {

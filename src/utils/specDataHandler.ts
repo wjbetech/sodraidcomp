@@ -5,6 +5,9 @@ interface Spec {
   specName: string;
   iconLink: string;
   id: string;
+  buffs: string[];
+  debuffs: string[];
+  abilities: string[];
 }
 
 interface WowClass {
