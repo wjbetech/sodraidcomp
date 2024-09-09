@@ -76,6 +76,6 @@ export default function RaidGrid() {
 }
 
 // todo:
-// [] - grab the abilities/buffs/debuffs
+// [O] - grab the abilities/buffs/debuffs
 // [] - filter those items based on the group and type of ability
 // [] - display filtered items in the bottom display

@@ -17,8 +17,8 @@ function App() {
 
   return (
     <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
-      <NavBar />
-      <main className="w-[80%] m-auto">
+      <main className="">
+        <NavBar />
         <h1 className="">SoD Raid Composition</h1>
         <span className="text-xs text-gray-400">by Valruna @ Living Flame EU</span>
         <WoWClasses />
