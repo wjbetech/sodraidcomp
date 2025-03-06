@@ -1,6 +1,5 @@
 import { useDroppable, useDndMonitor } from "@dnd-kit/core";
 import { useState } from "react";
-import colorByClass, { type ClassName } from "../utils/classColor";
 
 interface Spec {
   id: string;
